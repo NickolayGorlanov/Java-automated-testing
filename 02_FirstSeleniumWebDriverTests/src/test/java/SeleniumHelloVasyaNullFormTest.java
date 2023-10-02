@@ -4,21 +4,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class testSeleniumHelloVasya {
+public class SeleniumHelloVasyaNullFormTest {
     @Test
-    public void testHelloVasya(){
+    public void HelloVasyaTest(){
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.navigate().to("https://lm.skillbox.cc/qa_tester/module01/");
-        driver.findElement(By.name("name")).sendKeys("Вася");
+
         driver.findElement(By.className("button")).click();
 
 
         var  actualResult = driver.findElement(By.className("start-screen__res")).getText();
-        var expectedResult = "Привет, Вася!";
+        var expectedResult = "Привет, !";
         Assert.assertEquals(expectedResult, actualResult);
 
         driver.quit();
     }
-
 }

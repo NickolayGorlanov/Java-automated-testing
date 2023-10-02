@@ -31,7 +31,7 @@ public class SiriusSite {
     }
 
     @Test
-    public void testSuccessfulRegistration() {
+    public void SuccessfulRegistrationTest() {
         driver.findElement(By.name("name")).sendKeys("Илон Собакен Маск");
         driver.findElement(By.name("email")).sendKeys("sobaka-ilon@musk.info");
         driver.findElement(By.name("phone")).sendKeys("+1 000 000 0000");
@@ -40,12 +40,12 @@ public class SiriusSite {
     }
 
     @Test
-    public void testEmptyFields() {
+    public void EmptyFieldsTest() {
         driver.findElement(By.cssSelector(".custom-form__button")).click();
     }
 
     @Test
-    public void uI() {
+    public void UITest() {
         // Test name: Комплексный ввод спецсимволов, иероглифов, пробелов, скриптов, проврка UI
         // Step # | name | target | value
         // 1 | open | /qa_tester/module02/homework1/ |
@@ -72,7 +72,7 @@ public class SiriusSite {
     }
 
     @Test
-    public void testSqlInjection() {
+    public void SqlInjectionTest() {
         driver.findElement(By.name("name")).sendKeys("SELECT id, name FROM users WHERE id=1 UNION SELECT 1, version() limit 1,1");
         driver.findElement(By.name("email")).sendKeys("SELECT id, name FROM users WHERE id=1 UNION SELECT 1, version() limit 1,1");
         driver.findElement(By.name("phone")).sendKeys("SELECT id, name FROM users WHERE id=1 UNION SELECT 1, version() limit 1,1");
@@ -80,7 +80,7 @@ public class SiriusSite {
     }
 
     @Test
-    public void testWelcomeText() {
+    public void WelcomeTextTest() {
         driver.findElement(By.name("name")).sendKeys("Илон Собакен Маск");
         driver.findElement(By.name("email")).sendKeys("sobaka-ilon@musk.info");
         driver.findElement(By.name("phone")).sendKeys("+1 000 000 0000");
@@ -89,7 +89,7 @@ public class SiriusSite {
     }
 
     @Test
-    public void testWelcomeElement() {
+    public void WelcomeElementTest() {
         driver.findElement(By.name("name")).sendKeys("Илон Собакен Маск");
         driver.findElement(By.name("email")).sendKeys("sobaka-ilon@musk.info");
         driver.findElement(By.name("phone")).sendKeys("+1 000 000 0000");
