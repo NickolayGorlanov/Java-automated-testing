@@ -11,7 +11,7 @@ import java.util.Map;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
-public class SiriusSite {
+public class SiriusSiteTest {
     private WebDriver driver;
     private Map<String, Object> vars;
     JavascriptExecutor js;
