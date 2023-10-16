@@ -6,12 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-<<<<<<< HEAD
         <module name="02_FirstSeleniumWebDriverTests" />
-=======
-        <module name="SeleniumTests" />
-        <module name="03_SearchElementsWithSelenium" />
->>>>>>> 63269dd4e395f9a3a818836df4f992a7a7f74e66
       </profile>
     </annotationProcessing>
   </component>

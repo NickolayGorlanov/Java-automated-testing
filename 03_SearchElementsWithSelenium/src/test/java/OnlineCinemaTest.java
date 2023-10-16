@@ -1,22 +1,19 @@
 import org.junit.*;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.Map;
+import java.util.*;
 
 import static org.junit.Assert.assertEquals;
 
-public class OnlineCinema {
+public class OnlineCinemaTest {
     private static WebDriver driver;
     private static Map<String, Object> var;
     static JavascriptExecutor js;
 
     @BeforeClass
     public static void setUp() {
-       /* System.setProperty("webdriver.chrome.driver", "путь_к_драйверу/chromedriver");*/
+        /* System.setProperty("webdriver.chrome.driver", "путь_к_драйверу/chromedriver");*/
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://lm.skillbox.cc/qa_tester/module07/practice3/");
@@ -55,7 +52,6 @@ public class OnlineCinema {
         okButton.click();
 
 
-
         // Проверьте, что текст после нажатия "ОК" совпадает с введенным в поле "Ваши любимые фильмы"
         WebElement filmResult = driver.findElement(By.id("best_films"));
         assertEquals("Интерстеллар", filmResult.getText());
@@ -89,7 +85,6 @@ public class OnlineCinema {
         driver.findElement(By.cssSelector(".module__input:nth-child(4) .fake-radiobutton")).click();
 
 
-
         // Нажмите на кнопку "ВВОД"
         WebElement enterButton = driver.findElement(By.id("save"));
         enterButton.click();
@@ -97,7 +92,6 @@ public class OnlineCinema {
         // Нажмите на кнопку "ОК"
         WebElement okButton = driver.findElement(By.id("ok"));
         okButton.click();
-
 
 
         // Проверьте, что текст после нажатия "ОК" совпадает с введенным в поле "Ваши любимые фильмы"
@@ -122,11 +116,9 @@ public class OnlineCinema {
     }
 
 
-
-
     // Проверка на пустые поля, не нажат чек-бокс, не нажата радио-кнопка
     @Test
-    public void EmptyFields(){
+    public void EmptyFields() {
 
         // Нажмите на кнопку 2
         WebElement button2 = driver.findElement(By.id("two"));

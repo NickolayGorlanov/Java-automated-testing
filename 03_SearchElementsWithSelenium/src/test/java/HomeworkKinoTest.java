@@ -1,11 +1,11 @@
-import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.junit.*;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class HomeworkKino {
+
+public class HomeworkKinoTest {
     @Test
-    public void  GetElement() {
+    public void GetElement() {
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.navigate().to("https://lm.skillbox.cc/qa_tester/module05/practice1/");

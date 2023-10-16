@@ -1,16 +1,8 @@
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.junit.*;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
+import java.util.*;
 
 public class BookStoreTest {
 
@@ -35,19 +27,19 @@ public class BookStoreTest {
     @Test
     public void testBookStore() {
 
-    // Найдите элементы
-    WebElement feedbackLink = driver.findElement(By.linkText("Обратная связь"));
-    WebElement preordersLink = driver.findElement(By.linkText("Предзаказы"));
-    WebElement firstBookAddToCartButton = driver.findElement(By.xpath("(//button[@class='book-add'])[1]"));
-    WebElement cartItemCount = driver.findElement(By.id("cart_count"));
-    WebElement genresMenu = driver.findElement(By.id("genres"));
-    WebElement searchInput = driver.findElement(By.id("search-input"));
+        // Найдите элементы
+        WebElement feedbackLink = driver.findElement(By.linkText("Обратная связь"));
+        WebElement preordersLink = driver.findElement(By.linkText("Предзаказы"));
+        WebElement firstBookAddToCartButton = driver.findElement(By.xpath("(//button[@class='book-add'])[1]"));
+        WebElement cartItemCount = driver.findElement(By.id("cart_count"));
+        WebElement genresMenu = driver.findElement(By.id("genres"));
+        WebElement searchInput = driver.findElement(By.id("search-input"));
 
 
-    List<WebElement> bookInfoElements = driver.findElements(By.cssSelector("div.book-info"));
+        List<WebElement> bookInfoElements = driver.findElements(By.cssSelector("div.book-info"));
 
-    // Проверьте, что их ровно 15
-        assert(bookInfoElements.size() == 15);
-}
+        // Проверьте, что их ровно 15
+        assert (bookInfoElements.size() == 15);
+    }
 }
 
