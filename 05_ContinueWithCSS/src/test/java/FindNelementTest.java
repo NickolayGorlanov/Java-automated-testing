@@ -53,7 +53,7 @@ public class FindNelementTest {
         static By locatorMenuMain = By.cssSelector("li#genres + *");
         /*
                 На странице поиска найдите любые теги, которые расположены после <div class="filter-container"> (необязательно ближайший сосед).*/
-        static By locatorFilterContainer = By.cssSelector(".filter-container + *");
+        static By locatorFilterContainer = By.cssSelector(".filter-container > *");
         /*
                 Первый тег h1, находящийся сразу на первом уровне вложенности внутри <section class="important-section-block" for="main-header-page">. Используйте поиск по первому child.*/
         static By locatorSectionH1 = By.cssSelector("section.important-section-block > h1:first-child");
