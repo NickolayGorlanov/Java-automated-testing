@@ -5,62 +5,51 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.*;
+
+import java.util.concurrent.TimeUnit;
 
 public class DeleteNotesTest {
 
-        private WebDriver driver;
-        private WebDriverWait wait;
-        JavascriptExecutor js;
-
-
-        @Before
-        public void setUp() {
-            driver = new ChromeDriver();
-            wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-            js = (JavascriptExecutor) driver;
-            Map<String, Object> var = new HashMap<String, Object>();
-            driver.manage().window().maximize();
-            driver.get("http://qa.skillbox.ru/module15/bignotes/#/statistic");
-        }
-
-        @After
-        public void tearDown() {
-            driver.quit();
-        }
-
-
-        private static class LocatorNotes{
-
-            static By DeleteButton = By.cssSelector("div.pageArticle__buttons > button:nth-child(2)");
-//
-//            static By title = By
-        }
-
-        @Test
-        public void testForm() {
-
-            driver.findElement(By.cssSelector(".articlePreview:nth-child(1) > .articlePreview__link")).click();
-            WebElement title = driver.findElement(By.xpath("//p[contains(text(),'Путешествие на Восток')]"));
-
-            WebElement deleteButton1 = wait.until(ExpectedConditions.elementToBeClickable(LocatorNotes.DeleteButton));
-            deleteButton1.click();
-
-
-            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//p[text()='Путешествие на Восток']")));
-
-            driver.findElement(By.cssSelector(".articlePreview:nth-child(1) > .articlePreview__link")).click();
-
-
-            WebElement DeleteButton2 = wait.until(ExpectedConditions.elementToBeClickable(LocatorNotes.DeleteButton));
-            DeleteButton2.click();
+    private WebDriver driver;
+    private WebDriverWait wait;
+    Duration seconds = Duration.ofSeconds(10);
 
 
 
-        }}
+    @Before
+    public void setUp() {
+        System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");
+        driver = new ChromeDriver();
+        wait = new WebDriverWait(driver, seconds);
+       driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    }
+
+    @After
+    public void tearDown() {
+        driver.quit();
+    }
+
+    private final By note = By.cssSelector(".articlePreview__link");
+    private final By title = By.cssSelector(".articlePreview__title");
+    private final By text = By.cssSelector(".articlePreview__text");
+    private final By titleIn = By.cssSelector(".baseInput__field");
+    private final By textIn = By.cssSelector(".baseTextarea__text");
+    private final By basket = By.cssSelector(".pageArticle__buttons .pageArticle__button:nth-of-type(2)");
+    private final By writing = By.cssSelector(".articlePreview__link");
+
+    @Test
+    public void checkSite() {
+        driver.navigate().to("http://qa.skillbox.ru/module15/bignotes/#/statistic");
+        driver.findElement(note).click();
+        Assert.assertEquals("Значения не совпадают", driver.findElement(title).getText(), driver.findElement(titleIn).getText());
+        wait.until(ExpectedConditions.attributeToBe(textIn, "_value", driver.findElement(text).getText()));
+        Assert.assertEquals("Значения не совпадают", driver.findElement(text).getText(), driver.findElement(textIn).getAttribute("_value"));
+        driver.findElement(basket).click();
+        driver.findElement(writing).click();
+        driver.findElement(basket).click();
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(writing));
+        Assert.assertTrue(driver.findElement(writing).isDisplayed());
+    }
 
 
-
-
-
-
+}
