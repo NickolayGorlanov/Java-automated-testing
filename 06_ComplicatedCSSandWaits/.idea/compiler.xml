@@ -6,10 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SeleniumTests" />
+        <module name="02_FirstSeleniumWebDriverTests" />
         <module name="03_SearchElementsWithSelenium" />
         <module name="04_SearchWithCSS" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SeleniumTests" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
