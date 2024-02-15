@@ -20,6 +20,7 @@ public class DeleteNotesTest {
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");
         driver = new ChromeDriver();
+        driver.manage().window().maximize();
         wait = new WebDriverWait(driver, seconds);
        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }

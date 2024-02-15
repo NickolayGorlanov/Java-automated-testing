@@ -1,0 +1,32 @@
+email,	name,	Password
+""	Аб,	_=d;-A#b
+"email.domain.com",	                          "Лсзвлмузхмтшййаяфэазыущцфосъшр",	                          "$b_.A|S!-=/-a+,A`S|?"
+"@domain.com",	                          "а",	                          "_=d;-Ab"
+"#@%^%#$@#$@#.com",	                          "ёкбььуеэыгтддцдкечйчхъицекыанъщ",	                          "$b_.A|S!-=/-a+,A`S|?;"
+"joe smith <email@domain.com>",	                          "",	                          ""
+"email@domain.com (joe smith)",	                          " ",	                          "gYsQZn"
+"email@domain@domain.com",	                          "-",	                          "龍門大酒家"
+".email@domain.com",	                          "--",	                          "صسغذئآ"
+"email.@domain.com",	                          "gYsQZn",	                          "0123456789"
+"email..email@domain.com",	                          "龍門大酒家",	                          "АбвЦуКепрррр",]
+"あいうえお@domain.com",	                          "صسغذئآ",	                         ids=["8 symbols"
+"email@-domain.com",	                          "0123456789",],	                              "20 symbols"
+"email@.domain.com",	                         ids=["Two cyrillics",	                              "7 symbols"
+"email@111.222.333.44444",	                              "30 cyrillics",	                              "21 symbols"
+"email@domain..com"],	                              "One cyrillic",	                              "Empty"
+ids=["Empty",	                              "31 cyrillics",	                              "Group of Latin"
+"Missing @",	                              "Empty",	                              "Group of Chinese"
+"Missing address",	                              "One space",	                              "Group of Arabic"
+"Garbage",	                              "Hyphen",	                              "Group of numbers"
+"Copy/paste from address book with name",	                              "Two hyphens",	                              "Group of Cyrillic"
+"Superfluous text",	                              "Group of Latin",
+"Two @",	                              "Group of Chinese",
+"Leading dot in address",	                              "Group of Arabic",
+"Trailing dot in address",	                              "Group of numbers",
+"Multiple dots",
+"Unicode chars in address",
+"Leading dash in domain",
+"Leading dot in domain",
+"Invalid IP format",
+"Multiple dots in the domain,
+
