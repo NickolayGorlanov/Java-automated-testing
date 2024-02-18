@@ -34,3 +34,47 @@
 Примеры использования XPath для поиска элементов на веб-странице.
 
 - [**07_XPath**: Поиск элементов с помощью XPath.](https://github.com/NickolayGorlanov/Java-automated-testing/tree/Java-automated-testing/WebSite-testing/07_XPath)
+
+# Автотестирование программ на Java
+
+Добро пожаловать в репозиторий "Автотестирование программ на Java"! Здесь вы найдете примеры автотестов для различных программ на языке Java.
+
+## Разделы
+
+### Коллекции: Map
+Примеры тестов для коллекции Map в Java.
+
+- [**java_CollectionsMap**: Тестирование коллекции Map в Java.](https://github.com/NickolayGorlanov/Java-automated-testing/tree/Java-automated-testing/Java-programs-testing/java_CollectionsMap)
+
+### Коллекции: Search
+Примеры тестов для поиска элементов в коллекциях Java.
+
+- [**java_CollectionsSearch**: Тестирование поиска элементов в коллекциях Java.](https://github.com/NickolayGorlanov/Java-automated-testing/tree/Java-automated-testing/Java-programs-testing/java_CollectionsSearch)
+
+### Коллекции: Set
+Примеры тестов для коллекции Set в Java.
+
+- [**java_CollectionsSet**: Тестирование коллекции Set в Java.](https://github.com/NickolayGorlanov/Java-automated-testing/tree/Java-automated-testing/Java-programs-testing/java_CollectionsSet)
+
+### Коллекции: Array
+Примеры тестов для работы с массивами в Java.
+
+- [**java_collectionsarray**: Тестирование работы с массивами в Java.](https://github.com/NickolayGorlanov/Java-automated-testing/tree/Java-automated-testing/Java-programs-testing/java_collectionsarray)
+
+### Коллекции: List
+Примеры тестов для работы с списками в Java.
+
+- [**java_collectionslist**: Тестирование работы с списками в Java.](https://github.com/NickolayGorlanov/Java-automated-testing/tree/Java-automated-testing/Java-programs-testing/java_collectionslist)
+
+### Числа и даты
+Примеры тестов для работы с числами и датами в Java.
+
+- [**java_numbersanddates**: Тестирование работы с числами и датами в Java.](https://github.com/NickolayGorlanov/Java-automated-testing/tree/Java-automated-testing/Java-programs-testing/java_numbersanddates)
+
+### Строки
+Примеры тестов для работы со строками в Java.
+
+- [**java_strings**: Тестирование работы со строками в Java.](https://github.com/NickolayGorlanov/Java-automated-testing/tree/Java-automated-testing/Java-programs-testing/java_strings)
+
+
+
