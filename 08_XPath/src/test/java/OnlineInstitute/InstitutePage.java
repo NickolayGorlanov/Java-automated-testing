@@ -10,22 +10,22 @@ public class InstitutePage {
     }
 
     public void findHeaderTitle() {
-        driver.findElement(OnlineInstituteTest.LocatorsInstitute.headerTitle);
+        driver.findElement(LocatorsInstitute.headerTitle);
     }
 
     public void findLastPeriodElement() {
-        driver.findElement(OnlineInstituteTest.LocatorsInstitute.lastPeriodElement);
+        driver.findElement(LocatorsInstitute.lastPeriodElement);
     }
 
     public void findParentLink() {
-        driver.findElement(OnlineInstituteTest.LocatorsInstitute.parentforLink);
+        driver.findElement(LocatorsInstitute.parentLink);
     }
 
     public void findFiveElement() {
-        driver.findElement(OnlineInstituteTest.LocatorsInstitute.fiveElement);
+        driver.findElement(LocatorsInstitute.fiveElement);
     }
 
     public void findHeaderAllCourses() {
-        driver.findElement(OnlineInstituteTest.LocatorsInstitute.headerAllCourses);
+        driver.findElement(LocatorsInstitute.headerAllCourses);
     }
 }

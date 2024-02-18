@@ -53,7 +53,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class OnlineInstituteTest {
-
     private WebDriver driver;
 
     @Before
@@ -81,11 +80,5 @@ public class OnlineInstituteTest {
         institutePage.findHeaderAllCourses();
     }
 
-    public static class LocatorsInstitute {
-        static By headerTitle = By.xpath("(//span[@class='baseCard__title'])[5]");
-        static By lastPeriodElement = By.xpath("(//div[@class='baseCondition'])[last()]");
-        static By parentforLink = By.xpath("//a[@href='#']/parent::div");
-        static By fiveElement = By.xpath("(//div[@class='baseCondition'])[5]");
-        static By headerAllCourses = By.xpath("(//div[@class='pageCreate__title']/ancestor::div)");
-    }
+   
 }

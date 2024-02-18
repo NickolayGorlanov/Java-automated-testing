@@ -11,18 +11,20 @@ public class BookStorePage {
     }
 
     public void navigateToAboutUs() {
-        driver.findElement(BookStoreTest.LocatorsBookStore.aboutUs).click();
+        driver.findElement(LocatorsBookStore.aboutUs).click();
     }
 
     public void navigateToBestSellers() {
-        driver.findElement(BookStoreTest.LocatorsBookStore.bestSeller).click();
+        driver.findElement(LocatorsBookStore.bestSeller).click();
     }
 
     public void searchFor(String searchTerm) {
-        driver.findElement(BookStoreTest.LocatorsBookStore.searchString).sendKeys(searchTerm + Keys.ENTER);
+        driver.findElement(LocatorsBookStore.searchString).sendKeys(searchTerm + Keys.ENTER);
     }
 
     public void addFirstBookToCart() {
-        driver.findElement(BookStoreTest.LocatorsBookStore.bookAddButton).click();
+        driver.findElement(LocatorsBookStore.bookAddButton).click();
     }
+
+
 }

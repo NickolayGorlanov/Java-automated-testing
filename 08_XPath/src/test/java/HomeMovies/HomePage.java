@@ -1,6 +1,5 @@
 package HomeMovies;
 
-
 import org.openqa.selenium.WebDriver;
 
 public class HomePage {
@@ -11,27 +10,26 @@ public class HomePage {
     }
 
     public void findArrowBack() {
-        driver.findElement(HomeMoviesTest.LocatorsMovies.arrowBack);
+        driver.findElement(LocatorsMovies.arrowBack);
     }
 
     public void findLearnMore() {
-        driver.findElement(HomeMoviesTest.LocatorsMovies.learnMore);
+        driver.findElement(LocatorsMovies.learnMore);
     }
 
     public void findInactiveFilters() {
-        driver.findElement(HomeMoviesTest.LocatorsMovies.inactiveFilters);
+        driver.findElement(LocatorsMovies.inactiveFilters);
     }
 
     public void findButtonClass() {
-        driver.findElement(HomeMoviesTest.LocatorsMovies.buttonClass);
+        driver.findElement(LocatorsMovies.buttonClass);
     }
 
     public void findSubscribeButton() {
-        driver.findElement(HomeMoviesTest.LocatorsMovies.subscribeButton);
+        driver.findElement(LocatorsMovies.subscribeButton);
     }
 
     public void findClientsImage() {
-        driver.findElement(HomeMoviesTest.LocatorsMovies.clientsImage);
+        driver.findElement(LocatorsMovies.clientsImage);
     }
 }
-

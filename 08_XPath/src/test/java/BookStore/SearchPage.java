@@ -10,6 +10,6 @@ public class SearchPage {
     }
 
     public void cancelSearch() {
-        driver.findElement(BookStoreTest.LocatorTotalPrice.cancelButton).click();
+        driver.findElement(LocatorTotalPrice.cancelButton).click();
     }
 }

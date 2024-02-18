@@ -113,18 +113,6 @@ public class BookStoreTest {
         searchPage.cancelSearch();
     }
 
-    public static class LocatorsBookStore {
-        static By aboutUs = By.xpath("//footer[@id='footer']//a[text()='О магазине']");
-        static By bestSeller = By.xpath("//h1[text()='Бестселлеры']");
-        static By searchString = By.xpath("//input[@id='search-input']");
-        static By bookAddButton = By.xpath("(//div[@class='book-price'][1]/button[@class='book-add'])[1]");
-    }
-
-    public static class LocatorTotalPrice {
-        static By totalPrice = By.xpath("//div[@id='total']");
-        static By yourOrdering = By.xpath("//div[contains(text(), 'Ваш заказ:')]");
-        static By cancelButton = By.xpath("(//button[@class='filter-button' and text()='Отменить'])");
-    }
 }
 
 

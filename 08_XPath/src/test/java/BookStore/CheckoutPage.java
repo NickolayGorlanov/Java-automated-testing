@@ -10,10 +10,10 @@ public class CheckoutPage {
     }
 
     public void getTotalPrice() {
-        driver.findElement(BookStoreTest.LocatorTotalPrice.totalPrice);
+        driver.findElement(LocatorTotalPrice.totalPrice);
     }
 
     public void getYourOrdering() {
-        driver.findElement(BookStoreTest.LocatorTotalPrice.yourOrdering);
+        driver.findElement(LocatorTotalPrice.yourOrdering);
     }
 }
