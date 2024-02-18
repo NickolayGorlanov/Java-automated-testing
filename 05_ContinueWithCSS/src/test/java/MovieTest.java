@@ -3,7 +3,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-public class HomeworkKinoTest {
+public class MovieTest {
     @Test
     public void GetElement() {
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
