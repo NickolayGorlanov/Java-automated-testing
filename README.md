@@ -13,24 +13,24 @@
 ### Поиск элементов с Selenium
 Примеры поиска элементов на веб-странице с помощью Selenium WebDriver.
 
-- **03_SearchElementsWithSelenium**: Поиск элементов с использованием Selenium WebDriver.
+- [**03_SearchElementsWithSelenium**: Поиск элементов с использованием Selenium WebDriver.](https://github.com/NickolayGorlanov/Java-automated-testing/tree/Java-automated-testing/03_SearchElementsWithSelenium)
 
 ### Поиск с использованием CSS
 Примеры поиска элементов с использованием CSS-селекторов.
 
-- **04_SearchWithCSS**: Поиск элементов с помощью CSS-селекторов.
+- [**04_SearchWithCSS**: Поиск элементов с помощью CSS-селекторов.](https://github.com/NickolayGorlanov/Java-automated-testing/tree/Java-automated-testing/04_SearchWithCSS)
 
 ### Продолжение работы с CSS
 Дополнительные примеры работы с CSS-селекторами и ожиданиями.
 
-- **05_ContinueWithCSS**: Продолжение работы с CSS-селекторами.
+- [**05_ContinueWithCSS**: Продолжение работы с CSS-селекторами.](https://github.com/NickolayGorlanov/Java-automated-testing/tree/Java-automated-testing/05_ContinueWithCSS)
 
 ### Сложные CSS-селекторы и ожидания
 Более сложные примеры работы с CSS-селекторами и настройками ожиданий.
 
-- **06_ComplicatedCSSandWaits**: Сложные CSS-селекторы и настройки ожидания.
+- [**06_ComplicatedCSSandWaits**: Сложные CSS-селекторы и настройки ожидания.](https://github.com/NickolayGorlanov/Java-automated-testing/tree/Java-automated-testing/06_ComplicatedCSSandWaits)
 
 ### XPath
 Примеры использования XPath для поиска элементов на веб-странице.
 
-- **08_XPath**: Поиск элементов с помощью XPath.
+- [**07_XPath**: Поиск элементов с помощью XPath.](https://github.com/NickolayGorlanov/Java-automated-testing/tree/Java-automated-testing/07_XPath)
