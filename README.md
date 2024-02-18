@@ -8,7 +8,7 @@
 ### Первые тесты с Selenium WebDriver
 Примеры базовых тестов с использованием Selenium WebDriver.
 
-- ![**02_FirstSeleniumWebDriverTests**: Первые шаги с Selenium WebDriver.](https://github.com/NickolayGorlanov/Java-automated-testing/tree/Java-automated-testing/02_FirstSeleniumWebDriverTests)
+- [**02_FirstSeleniumWebDriverTests**: Первые шаги с Selenium WebDriver.](https://github.com/NickolayGorlanov/Java-automated-testing/tree/Java-automated-testing/02_FirstSeleniumWebDriverTests)
 
 ### Поиск элементов с Selenium
 Примеры поиска элементов на веб-странице с помощью Selenium WebDriver.
