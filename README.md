@@ -76,5 +76,12 @@
 
 - [**java_strings**: Тестирование работы со строками в Java.](https://github.com/NickolayGorlanov/Java-automated-testing/tree/Java-automated-testing/Java-programs-testing/java_strings)
 
+  ### Тестирование API
+- [StreamAPI/Airport](https://github.com/NickolayGorlanov/Java-automated-testing/tree/Java-automated-testing/Java-programs-testing/StreamAPI)
+Написать юнит-тесты с использованием библиотеки JUnit 5.
+Создать тестовые классы-заглушки (моки) с помощью библиотеки Mockito при написании юнит-тестов.
+Тестировать слой доступа к данным Spring JPA с помощью testcontainers.
+Тестировать Spring MVC приложения.
+
 
 
